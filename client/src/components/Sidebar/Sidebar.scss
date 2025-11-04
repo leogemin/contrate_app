@@ -1,0 +1,71 @@
+@use '../../styles/variables';
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 100vh;
+  background-color: variables.$light-background;
+  border-right: 1px solid #eaeaea;
+  transition: background-color 0.3s;
+
+  &__logo {
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: variables.$light-text;
+  }
+
+  &__nav {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  &__nav-link {
+    color: variables.$light-text;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+
+    &--active {
+      background-color: variables.$dark-blue;
+      color: variables.$white;
+    }
+  }
+
+  &__footer {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+[data-theme='dark'] .sidebar {
+  background-color: variables.$dark-background;
+  border-right: 1px solid #333;
+
+  &__logo {
+    color: variables.$dark-text;
+  }
+
+  &__nav-link {
+    color: variables.$dark-text;
+
+    &:hover {
+      background-color: #333;
+    }
+
+    &--active {
+      background-color: variables.$light-text;
+      color: variables.$dark-text;
+    }
+  }
+}

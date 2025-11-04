@@ -1,0 +1,29 @@
+.auth-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.auth-card {
+  width: 400px;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: var(--gray-2);
+
+  &__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__link {
+    text-align: center;
+    margin-top: 20px;
+  }
+}

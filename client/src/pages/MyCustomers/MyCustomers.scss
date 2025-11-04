@@ -1,0 +1,46 @@
+.my-customers {
+  h1 {
+    margin-bottom: 20px;
+  }
+}
+
+.customer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.customer-item {
+  border: 1px solid var(--gray-5);
+  border-radius: 5px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    background-color: var(--gray-2);
+  }
+
+  &__processes {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.process-link {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--gray-3);
+    border-radius: 5px;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        background-color: var(--gray-4);
+    }
+}

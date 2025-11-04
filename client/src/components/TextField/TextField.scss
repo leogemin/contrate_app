@@ -1,0 +1,21 @@
+.text-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  &__icon {
+    position: absolute;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+  }
+
+  .rt-TextFieldRoot {
+    padding: 1em 1em 1em 2em;
+    width: 100%;
+    height: auto;
+    background: none;
+  }
+}
