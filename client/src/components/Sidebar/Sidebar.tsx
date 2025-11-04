@@ -21,7 +21,6 @@ export const Sidebar = () => {
       </div>
       <nav className="sidebar__nav">
         <NavLink to="/" className={({ isActive }) => "sidebar__nav-link" + (isActive ? " sidebar__nav-link--active" : "")}>Home</NavLink>
-        <NavLink to="/customers" className={({ isActive }) => "sidebar__nav-link" + (isActive ? " sidebar__nav-link--active" : "")}>My Customers</NavLink>
         <NavLink to="/profile" className={({ isActive }) => "sidebar__nav-link" + (isActive ? " sidebar__nav-link--active" : "")}>My Profile</NavLink>
         <NavLink to="/login" className={({ isActive }) => "sidebar__nav-link" + (isActive ? " sidebar__nav-link--active" : "")}>Login</NavLink>
       </nav>

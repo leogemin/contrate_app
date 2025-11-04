@@ -2,20 +2,24 @@
   position: relative;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100%;  
 
+  .rt-TextFieldRoot {
+    padding: 1em;
+    width: 100%;
+    height: auto;
+    background: none;
+  }
+  
   &__icon {
     position: absolute;
     left: 10px;
     display: flex;
     align-items: center;
     pointer-events: none;
-  }
 
-  .rt-TextFieldRoot {
-    padding: 1em 1em 1em 2em;
-    width: 100%;
-    height: auto;
-    background: none;
+    & ~ .rt-TextFieldRoot {
+      padding-left: 2em;
+    }
   }
 }
